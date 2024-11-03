@@ -12,7 +12,7 @@ Page({
     scale: 18, //缩放级别，取值范围为5-18
     markers: [], //标记
     polyline: [], //路线
-    searchValue: '',
+    searchValue: '111',
     isHidden: true, //隐藏搜索列表
     markersData: [  //后台返回的标记点数组 
       {
@@ -65,6 +65,7 @@ Page({
   // 生命周期函数--监听页面加载
   onLoad: function() {
     
+    console.log("dd"+this.data.searchValue)
 
     // 使用 wx.createMapContext 获取 map 上下文
     this.mapCtx = wx.createMapContext('map')

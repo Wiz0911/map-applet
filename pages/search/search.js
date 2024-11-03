@@ -4,7 +4,7 @@ let qqmapsdk = config.qqmapsdk;
 
 Page({
   data: {
-    searchValue: '',
+    searchValue: '123',
     histories: [],
     pois: [], //地点
     stations: [],  //车站
@@ -13,6 +13,7 @@ Page({
   },
   onLoad: function () {
     let that = this;
+    console.log("dd"+this.data.searchValue)
     that.getSearchStorage();
   },
 
